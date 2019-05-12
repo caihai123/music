@@ -129,6 +129,7 @@
                     default:
                         console.log("应该不会执行到这里")
                 }
+                this.state.onOff = false;
                 this.audio.autoplay = true;
             },
             monitor:function () {//当音频准备就绪后获取音频时长
@@ -150,11 +151,6 @@
                 let m = time/60<10?`0${parseInt(time/60)}`:parseInt(time/60);
                 let s = time%60<10?`0${time%60}`:time%60;
                 return `${m}:${s}`
-            },
-            switchover:function (index) {//切换音乐函数
-                this.index = index;
-                this.state.onOff = false;
-                this.audio.autoplay = true;
             },
             volumeSwitch:function () {//开启或关闭静音的函数
                 this.audio.muted = !this.audio.muted;
