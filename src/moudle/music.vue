@@ -59,7 +59,7 @@
                 <div class=""></div>
             </div>
         </div>
-        <audio :src="lists[index].url" id="audio" @playing="playing" @pause="state.onOff=false" @canplay="monitor">
+        <audio :src="lists[index].url" id="audio" @playing="playing" @pause="state.onOff=false" @canplay="monitor" @ended="prevNext(false)">
             这个标签都不支持，我实在是没办法将就你
         </audio>
     </div>
@@ -95,6 +95,7 @@
         },
         mounted:function () {
             this.audio = document.getElementById("audio");
+
         },
         methods:{
             play:function () {//播放and暂停
