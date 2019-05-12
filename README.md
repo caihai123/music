@@ -1,29 +1,3 @@
-# music_module
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 音乐播放组件
+>基于vue，audio标签做的一个音乐播放组件，目前实现的功能有播放/暂停，上一曲/下一曲，静音，播放模式（列表播放，单曲循环，随机播放），进度条
+![Image text](./src/assets/yulan.png)

@@ -54,7 +54,7 @@
             </div>
             <div>
                 <!--音乐列表按钮-->
-                <a class="icon list"><span>1</span></a>
+                <a class="icon list"><span>{{lists.length}}</span></a>
                 <!--音乐列表面板-->
                 <div class=""></div>
             </div>
